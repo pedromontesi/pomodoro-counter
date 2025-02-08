@@ -1,0 +1,22 @@
+.text-medium {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+
+
+
+.text-large {
+    font-family: 'poppins', sans-serif;
+    font-size: 6.25rem;
+    font-weight: 400;
+}
+
+.text-20 {
+    font-family: 'poppins', sans-serif;
+    font-size: 3.125rem;
+    font-weight: 400;
+    line-height: 1.4;
+}

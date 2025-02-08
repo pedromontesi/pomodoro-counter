@@ -1,0 +1,20 @@
+.developer-choice {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5rem auto;
+    justify-content: center;
+    
+}
+
+
+.developer-choice div {
+    padding: 100px 0 0 0;
+
+}
+.developer-choice iframe {
+    padding: 40px 0 0;
+}
