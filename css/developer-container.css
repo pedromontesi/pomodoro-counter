@@ -1,4 +1,4 @@
-.developer-choice {
+.developer-container {
     margin: 0 auto;
     max-width: 1200px;
     display: flex;
@@ -11,10 +11,10 @@
 }
 
 
-.developer-choice div {
+.developer-container div {
     padding: 100px 0 0 0;
 
 }
-.developer-choice iframe {
+.developer-container iframe {
     padding: 40px 0 0;
 }
