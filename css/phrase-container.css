@@ -9,3 +9,15 @@
         
 }
 
+.autor-design::before {
+    content: '';
+    width: 32px;
+    height: 4px;
+    display: inline-block;
+    background: #5FC3FF;
+    margin: 0 8px 4px 0;
+    
+
+
+
+}
