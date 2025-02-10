@@ -15,8 +15,8 @@
     flex-wrap: wrap;
     flex-direction: column;
     box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
-    padding: 6.25rem 15rem;
-    border-radius: 50px;
+    padding: 100px 240px;
+    border-radius: 3.125rem;
     
     
 }

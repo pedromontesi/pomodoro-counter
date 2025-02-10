@@ -3,11 +3,14 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
     text-align: center;
+    max-width: 47.5rem;
+    flex-direction: column;
 
         
 }
+
+
 
 .autor-design::before {
     content: '';
