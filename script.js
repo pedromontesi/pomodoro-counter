@@ -8,12 +8,19 @@ function Pomodoro(minutes, seconds) {
 
 const pomodoroTimer = new Pomodoro(25, 0);
 let timer;
+let isRunning = false; 
 
 function startTimer() {
+    if (timer) {
+        clearInterval(timer);
+    }
+
     timer = setInterval(() => {
         if (pomodoroTimer.minutes === 0 && pomodoroTimer.seconds === 0) {
             counter.removeAttribute("data-number");
-            clearInterval(timer); // Parar o intervalo corretamente
+            clearInterval(timer);
+            isRunning = false; 
+            button.textContent = "▶";
             return;
         }
 
@@ -31,16 +38,26 @@ function startTimer() {
 }
 
 function handleActive() {
-    counter.setAttribute("data-number", "active");
-    startTimer();
+    if (isRunning) {
+        clearInterval(timer);
+        isRunning = false;
+        button.textContent = "▶"; 
+    } else {
+        counter.setAttribute("data-number", "active");
+        startTimer();
+        isRunning = true;
+        button.textContent = "■"; 
+    }
 }
 
-button.addEventListener('click', handleActive)
+button.addEventListener('click', handleActive);
 
 function handleOutsideClick(event) {
     if (event.target !== button && !button.contains(event.target)) {
         counter.removeAttribute("data-number");
-        clearInterval(timer); // Parar o intervalo corretamente
+        clearInterval(timer); 
+        isRunning = false; 
+        button.textContent = "▶"; 
     }
 }
 
