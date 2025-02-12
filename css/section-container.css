@@ -32,7 +32,7 @@ button {
 
 
 /* CSS */
-.button-17 {
+.button-class {
   align-items: center;
   appearance: none;
   background-color: #5FC3FF;
@@ -66,36 +66,36 @@ button {
   z-index: 0;
 }
 
-.button-17:hover {
+.button-class:hover {
   background: #5FC3FF;
   color: #fff;
 }
 
-.button-17:active {
+.button-class:active {
   outline: none;
 }
 
-.button-17:focus {
+.button-class:focus {
   outline: none;
-  border: 2px solid #666;
+  border: 2px solid #222;
 }
 
-.button-17:not(:disabled) {
+.button-class:not(:disabled) {
     box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
-.button-17:not(:disabled):hover {
+.button-class:not(:disabled):hover {
     box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
-.button-17:not(:disabled):focus {
+.button-class:not(:disabled):focus {
     box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
-.button-17:not(:disabled):active {
+.button-class:not(:disabled):active {
     box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
-.button-17:disabled {
+.button-class:disabled {
     box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
 }
