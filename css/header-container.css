@@ -20,7 +20,7 @@
 }
 
 
-.items-container li {
+.items-container li a{
     display: flex;
     flex-direction: column;
     align-items: center;
