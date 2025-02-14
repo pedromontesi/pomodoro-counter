@@ -11,22 +11,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .dropdown-menu {
+            position: absolute;
+            display: none;
+            box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
+            background-color: var(--color-3);
+            padding: 8px 16px;
+            margin: 8px 0 0 0;
+            border-radius: 1.25rem;
+            z-index: 2;
+        }
+        
+        li[data-dropdown]:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header class="header-container">
         <nav>
             <ul class="items-container">
                 <li> 
-                    <h1 class="text-medium light-color">
-                        Sobre
-                    </h1>
+                    <p class="text-medium light-color">Sobre</p>
                     <img src="./img/about.svg" alt="">
                 </li>
-                <li>
-                    <h1 class="text-medium light-color">
-                        Temas
-                    </h1>
+                <li data-dropdown>
+                    <p class="text-medium light-color">Temas</p>
                     <img src="./img/theme.svg" alt="">
+                    <ul class="dropdown-menu">
+                        <li>
+                            <p class="text-medium light-color">Banana Dessert</p>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </nav>

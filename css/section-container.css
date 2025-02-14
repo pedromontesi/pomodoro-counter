@@ -35,7 +35,7 @@ button {
 .button-class {
   align-items: center;
   appearance: none;
-  background-color: #5FC3FF;
+  background-color: var(--color-1);
   border-radius: 24px;
   border-style: none;
   box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
@@ -67,7 +67,7 @@ button {
 }
 
 .button-class:hover {
-  background: #5FC3FF;
+  background: var(--color-1);
   color: #fff;
 }
 

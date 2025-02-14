@@ -1,11 +1,30 @@
-.light-color {
-    color: #444444;
+:root {
+    --color-0: #444444;
+    --color-1: #5FC3FF;
+    --color-2: #222222;
 }
 
+.nevada-color {
+    --color-3: #FFFFFF;
+    --color-4: #954B02;
+    --color-5: #FFEFCC;
+
+    
+}
+
+
+.light-color {
+    color: var(--color-0)
+}
+
+
 .primary-color {
-    color: #5FC3FF;
+    color: var(--color-1)
+    
+    
 }
 
 .secundary-color {
-    color: #222222;
+    color: var(--color-2)
+    
 }
