@@ -3,7 +3,6 @@
 @import '/css/global/global.css';
 @import '/css/global/color.css';
 @import '/css/global/text.css';
-@import '/css/global/radio.css';
 
 
 
@@ -14,6 +13,3 @@
 @import '/css/developer-container.css';
 @import '/css/phrase-container.css';
 
-/* Menu */
-
-@import '/css/dropdown-menu.css'
