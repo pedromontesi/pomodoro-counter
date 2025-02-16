@@ -6,93 +6,33 @@
     padding: 5rem 0 0 0;
     max-width: 1200px;
     flex-direction: column;
-    
-
 }
 
 .counter-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
     box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
     padding: 100px 240px;
     border-radius: 3.125rem;
-    
-    
 }
 
-button {
+.counter-container button {
     margin-top: 1.75rem;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-
 }
 
-.button-class {
-  align-items: center;
-  appearance: none;
-  background-color: var(--color-1);
-  border-radius: 24px;
-  border-style: none;
-  box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  fill: currentcolor;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  height: 48px;
-  justify-content: center;
-  letter-spacing: .25px;
-  line-height: normal;
-  max-width: 100%;
-  overflow: visible;
-  padding: 2px 24px;
-  position: relative;
-  text-align: center;
-  text-transform: none;
-  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: auto;
-  will-change: transform,opacity;
-  z-index: 0;
-}
-
-.button-class:hover {
-  background: var(--color-1);
-  color: #fff;
-}
-
-.button-class:active {
-  outline: none;
-}
-
-.button-class:focus {
-  outline: none;
-  border: 2px solid #3CB7FF;
-}
-
-.button-class:not(:disabled) {
-    box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
-}
-
-.button-class:not(:disabled):hover {
-    box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
-}
-
-.button-class:not(:disabled):focus {
-    box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
-}
-
-.button-class:not(:disabled):active {
-    box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
-}
-
-.button-class:disabled {
-    box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
+@media (max-width: 780px) {
+    .counter-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        box-shadow: none;
+        padding: 0; 
+        border-radius: 3.125rem;
+    }
 }
